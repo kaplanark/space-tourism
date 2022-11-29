@@ -13,7 +13,7 @@
       <div class="pagination"></div>
     </div>
     <div class="crew__right">
-      <img src="../assets/images/dauglas_hursley.png" alt="">
+      <img src="../assets/crew/image-douglas-hurley.webp" alt="">
     </div>
   </section>
 </template>
@@ -32,10 +32,11 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
-    img{
-      width: 100%;
-      height: auto;
-    }
+
+    // img{
+    //   width: 100%;
+    //   height: auto;
+    // }
   }
 }
 </style>

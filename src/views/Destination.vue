@@ -87,8 +87,14 @@ const tabHandler = (tab) => {
     padding: 0 112px 112px 112px;
     height: 100%;
 
+    @media screen and (max-width: 1200px) {
+        padding: 0 80px 80px 80px;
+        gap: 100px;
+    }
+
     @media screen and (max-width: 992px) {
         grid-template-columns: 1fr;
+        padding: 80px;
     }
 
     &__left {

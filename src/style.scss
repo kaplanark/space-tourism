@@ -19,3 +19,22 @@ ul,
 li {
   list-style: none;
 }
+
+html{
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    // margin: 6rem 0;
+    background: #242b35;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+}

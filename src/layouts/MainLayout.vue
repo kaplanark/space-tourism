@@ -31,28 +31,55 @@ const layoutClass = computed(() => {
   background-size: cover;
   display: flex;
   flex-direction: column;
-
-
-  @media screen and (min-width: 992px) {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-  }
+  overflow-x: hidden;
+  min-height: 100vh;
 
   &--home {
-    background-image: url('../assets/images/home.png');
+    background-image: url('../assets/home/background-home-desktop.jpg');
+
+    @media screen and (max-width: 768px) {
+      background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+
+    @media screen and (max-width: 480px) {
+      background-image: url('../assets/home/background-home-mobile.jpg');
+    }
   }
 
   &--destination {
-    background-image: url('../assets/images/destination.png');
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+
+    @media screen and (max-width: 768px) {
+      background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+    @media screen and (max-width: 480px) {
+      background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
   }
 
   &--crew {
-    background-image: url('../assets/images/crew.png');
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+
+    @media screen and (max-width: 768px) {
+      background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+
+    @media screen and (max-width: 480px) {
+      background-image: url('../assets/crew/background-crew-mobile.jpg');
+    }
   }
 
   &--technology {
-    background-image: url('../assets/images/technology.png');
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+
+    @media screen and (max-width: 768px) {
+      background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
+    @media screen and (max-width: 480px) {
+      background-image: url('../assets/technology/background-technology-mobile.jpg');
+    }
   }
 }
 
@@ -69,5 +96,8 @@ const layoutClass = computed(() => {
 
 .main {
   flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 </style>
