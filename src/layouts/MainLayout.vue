@@ -1,19 +1,20 @@
 <script setup>
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
+
 import Navigation from '../components/Navigation/Navigation.vue';
 import BaseLogo from '../components/BaseLogo.vue';
 
 const router = useRouter();
 
-const layoutBg = computed(() => {
+const layoutClass = computed(() => {
   let routeName = router.currentRoute.value.name.toLocaleLowerCase();
-  return `/assets/images/${routeName}.png`;
+  return routeName;
 });
 </script>
 
 <template>
-  <div class="base-layout" :style="{ backgroundImage: `url(${layoutBg})` }">
+  <div class="base-layout" :class="('base-layout--' + layoutClass)">
     <header class="header">
       <BaseLogo></BaseLogo>
       <Navigation></Navigation>
@@ -36,6 +37,22 @@ const layoutBg = computed(() => {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+  }
+
+  &--home {
+    background-image: url('../assets/images/home.png');
+  }
+
+  &--destination {
+    background-image: url('../assets/images/destination.png');
+  }
+
+  &--crew {
+    background-image: url('../assets/images/crew.png');
+  }
+
+  &--technology {
+    background-image: url('../assets/images/technology.png');
   }
 }
 

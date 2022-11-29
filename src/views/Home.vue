@@ -105,28 +105,10 @@ const data = {
       transition: all 0.3s ease-in-out;
     }
 
-    &::after{
-      position: absolute;
-      content: '';
-      height: 90%;
-      width: 90%;
-      border-radius: 50%;
-      border-top: 2px solid #D0D6F9;
-      transition: all 0.3s ease-in-out;
-      transform-origin: center;
-      animation: clockwise 3s linear infinite;
-    }
-
     &:hover {
       &::before {
         height: 450px;
         width: 450px;
-      }
-
-      &::after {
-        height: 446px;
-        width: 446px;
-        border-color: #fceec3;
       }
     }
   }

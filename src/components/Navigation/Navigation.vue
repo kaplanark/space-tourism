@@ -2,8 +2,8 @@
 const links = [
     { name: 'Home', path: '/home' },
     { name: 'Destination', path: '/destination' },
-    { name: 'Technology', path: '/technology' },
-    { name: 'Crew', path: '/crew' }
+    { name: 'Crew', path: '/crew' },
+    { name: 'Technology', path: '/technology' }
 ];
 </script>
 
