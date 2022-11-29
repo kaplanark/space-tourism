@@ -1,4 +1,4 @@
-<img src="./screenshots/ss2.png/>
+<img src="./screenshots/ss2.png" alt="">
 
 # Frontend Mentor - Space tourism multi-page website challenge
 
