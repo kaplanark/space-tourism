@@ -63,7 +63,7 @@ const tabHandler = (tab) => {
                 <p>Pick your destination</p>
             </div>
             <div class="obj">
-                <img :src="`src/assets/images/${activeData.image}`" alt="">
+                <img :src="`/${activeData.image}`" :alt="activeData.title">
             </div>
         </div>
         <div class="section__right">
