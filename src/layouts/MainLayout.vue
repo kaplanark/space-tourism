@@ -8,7 +8,7 @@ const router = useRouter();
 
 const layoutBg = computed(() => {
   let routeName = router.currentRoute.value.name.toLocaleLowerCase();
-  return `src/assets/images/${routeName}.png`;
+  return `assets/images/${routeName}.png`;
 });
 </script>
 
